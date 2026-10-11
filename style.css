@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+/* container parent */
+#container{
+    width: 40%;
+    height: 100px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+/* Heading */
+h4{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+/* btn */
+.colorChanger{
+    position: absolute;
+    bottom: 35%;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.colorChanger:hover{
+    border: 2px solid white;
+    box-shadow: 0px 0px 10px 10px black;
+    transition: 0.1s;
+}
+@media screen and (max-width: 768px){
+    #container{
+        width: 80%;
+    }
+    h4{
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+
+    }
+}  
+
+@media screen and (min-width: 1024px) and (max-width: 1280px){
+    #container{
+        width: 50%;
+    }
+    h4{
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+    }
+}
